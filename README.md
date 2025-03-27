@@ -1,4 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Recruitment Tracking System
+
+This is a modern recruitment tracking application built with Next.js that helps streamline the hiring process. The system provides comprehensive tools for managing candidate applications, interview scheduling, and hiring workflows.
+
+## Features
+
+- **Candidate Management**: Track and organize applicant information
+- **Job Posting Management**: Create, edit, and manage job listings
+- **Interview Scheduling**: Coordinate and schedule interviews with candidates
+- **Application Tracking**: Monitor candidate progress through hiring stages
+- **Dashboard & Analytics**: Visualize recruitment metrics and KPIs
+- **User Role Management**: Different access levels for recruiters, hiring managers, and admins
+
+## Tech Stack
+
+- **Frontend**: Next.js, React
+- **UI Components**: Shadcn-UI, Tailwind CSS
+- **State Management**: React Context API
+- **API Integration**: RESTful API for backend communication
+
+## Application Screenshots
+
+<div align="center">
+
+### Authentication
+<p>Modern authentication system with login and registration screens</p>
+<img src="./public/screeshots/front-page.png" alt="Login Page" width="400" />
+<img src="./public/screeshots/register.png" alt="Registration Page" width="400" />
+
+<br><br>
+
+### Dashboard & Job Management
+<p>Comprehensive dashboard showing key metrics and the job creation interface</p>
+<img src="./public/screeshots/dashborad.png" alt="Dashboard Overview" width="400" />
+<img src="./public/screeshots/newjob.png" alt="Job Creation Form" width="400" />
+
+<br><br>
+
+### Candidate Pipeline
+<p>Kanban board for candidate tracking and candidate creation form</p>
+<img src="./public/screeshots/kanban2.png" alt="Candidate Pipeline View" width="400" />
+<img src="./public/screeshots/newcandidate.png" alt="New Candidate Form" width="400" />
+
+<br><br>
+
+### Candidate Management
+<p>Comprehensive candidate board and interview scheduling interface</p>
+<img src="./public/screeshots/candidate-board.png" alt="Candidate Board" width="400" />
+<img src="./public/screeshots/interviewpage.png" alt="Interview Scheduling" width="400" />
+
+<br><br>
+
+### Interview Process
+<p>Interview dashboard and detailed interview view</p>
+<img src="./public/screeshots/interview-dashboard.png" alt="Interview Dashboard" width="400" />
+<img src="./public/screeshots/interviewID.png" alt="Interview Details" width="400" />
+
+<br><br>
+
+### Feedback System
+<p>Interview feedback collection and review screens</p>
+<img src="./public/screeshots/interviewFeedback.png" alt="Feedback Collection" width="400" />
+<img src="./public/screeshots/interviewIDFeedback.png" alt="Feedback Review" width="400" />
+
+<br><br>
+
+### Workflow Management
+<p>Candidate status tracking and workflow management</p>
+<img src="./public/screeshots/candidate-status.png" alt="Candidate Status" width="400" />
+<img src="./public/screeshots/kanban1.png" alt="Workflow Kanban" width="400" />
+
+</div>
 
 ## Getting Started
 
@@ -14,23 +85,31 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src
+├── components/       # Reusable UI components
+├── app/              # App router pages and layouts
+├── lib/              # Utility functions and shared logic
+├── context/          # Auth-context management
+└── types/            # Types Management 
+```
 
-## Learn More
+## Environment Configuration
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env.local` file in the root directory with the following variables:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+API_URL=your_backend_api_url
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+Follow the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for hosting options.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Please read the contribution guidelines before submitting pull requests.
